@@ -1,0 +1,119 @@
+/*Seccion inicio*/
+
+.section-inicio {
+  position: relative;
+  background-image: url(../img/fondo\ 3.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px;
+  scroll-margin-top: 80px;
+}
+
+.section-inicio-title,
+.section-inicio-description {
+  color: var(--color2);
+}
+
+.section-inicio-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.section-inicio-description {
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn-personal,
+.btn-empleo {
+  background-color: var(--color2);
+  color: var(--color1);
+  border: 1px solid var(--color5);
+}
+
+.btn-personal:hover,
+.btn-empleo:hover {
+  background-color: var(--color1);
+  color: var(--color2);
+  border: 1px solid var(--color5);
+}
+
+.main-section-inicio-content {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .section-inicio {
+    height: 80vh;
+  }
+
+  .section-inicio-title {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+
+  .section-inicio-description {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-inicio {
+    height: 100vh;
+    justify-content: left;
+  }
+
+  .section-inicio-title {
+    font-size: 3.3rem;
+    line-height: 3.5rem;
+    margin-bottom: 3rem;
+    text-align: start;
+  }
+
+  .section-inicio-description {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .buttons {
+    justify-content: start;
+  }
+
+  .main-section-inicio-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 30px;
+    margin: 0%;
+  }
+}

@@ -1,0 +1,151 @@
+/*Seccion candidatos*/
+
+.section-candidatos {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color5);
+  gap: 70px;
+  scroll-margin-top: 80px;
+}
+
+.main-section-candidatos-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fondo {
+  background-color: var(--color5);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 40px 30px;
+  scroll-margin-top: 80px;
+}
+
+.section-candidatos-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  color: var(--color3);
+  margin-bottom: 2rem;
+}
+
+.section-candidatos-description {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--color4);
+  text-align: justify;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  font-size: 1rem;
+  line-height: 1.2;
+  position: relative;
+  color: var(--color4);
+}
+
+.pasos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--color4);
+  margin-bottom: 20px;
+  margin-top: 10px;
+  line-height: 1.6rem;
+}
+
+.numero-seccion-candidatos {
+  width: 35px;
+  height: 35px;
+}
+
+.content-img {
+  max-width: 550px;
+  margin: auto;
+}
+.img-section {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .main-section-candidatos-content {
+    align-items: center;
+  }
+
+.section-candidatos-title {
+    font-size: 2.8rem;
+  }
+
+.section-candidatos-description {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .section-candidatos {
+    flex-direction: row;
+    align-items: center;
+    margin: 0px auto;
+    padding: 50px 20px;
+    max-width: 1200px;
+    gap: 90px;
+  }
+
+
+  .main-section-candidatos-content {
+    max-width: 600px;
+    align-items: start;
+}
+
+  .section-candidatos-title {
+    font-size: 3.3rem;
+    line-height: 3.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .section-candidatos-description {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  ul li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .pasos {
+    gap: 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .numero-seccion-candidatos {
+    width: 50px;
+    height: 50px;
+  }
+}
