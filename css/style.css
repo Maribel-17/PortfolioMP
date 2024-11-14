@@ -23,6 +23,7 @@
   font-family: "Sora", serif;
   scroll-behavior: smooth;
 }
+
 a:active,
 a:visited {
   text-decoration: none;
@@ -33,18 +34,17 @@ body, h1, h2, p {
   padding: 0;
 }
 
-/* .body {
+.body {
   width: 100vw;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--color4);
-} */
-
-main {
-  /* margin-top: 76.5px; */
 }
+
+/* main {
+  margin-top: 76.5px;
+} */
 
 .wrapper {
   width: 100%;
