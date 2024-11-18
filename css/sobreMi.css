@@ -1,0 +1,20 @@
+.section-sobre-mi {
+  background-image: url("../img/PapelTexturaFondo.svg");
+  text-align: center;
+  padding: 20px;
+  color: var(--color4);
+  gap: 48px;
+}
+
+.section-sobre-mi h1 {
+  font-size: 1.75rem;
+  margin: 20px 0px;
+  color: var(--color3);
+}
+
+.section-sobre-mi p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.5rem
+}
