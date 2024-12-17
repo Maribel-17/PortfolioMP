@@ -35,7 +35,7 @@
 }
 
 .content-buttons button:hover {
-  background-color: #09a08e;
+  background-color: var(--color9);
 }
 
 /* Contenido de los proyectos */
