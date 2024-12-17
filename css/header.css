@@ -94,16 +94,27 @@ header {
   color: var(--color3);
 }
 
-.download-button {
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
   background-color: var(--color1);
   color: var(--color2);
-  font-size: 0.9rem;
-  font-weight: 700;
-  padding: 10px;
-  border-radius: 10px;
-  border: none;
-  width: 60%;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
 }
+
+.btn img {
+  width: 16px; 
+  margin-left: 5px; 
+  vertical-align: middle;
+}
+
+.btn:hover {
+  background-color: var(--color8)
+}
+
 
 @media screen and (min-width: 768px) {
   header {
