@@ -1,25 +1,11 @@
 /*Header*/
-/* header {
-  width: 100vw;
-  background-color: white;
-  height: 76.5px;
-  position: fixed;
-  z-index: 50;
-  top: 0;
-  transform: translate(-50%, 0%);
-  left: 50%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-} */
-
 header {
   width: 100vw;
-  /* height: 76.5px; */
   background-color: var(--color2);
   position: fixed;
   z-index: 50;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 .header {
   width: 100%;
@@ -27,7 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 20px;
+  padding: 20px 30px;
   top: 0;
   position: relative;
   background-color: var(--color2);
