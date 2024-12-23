@@ -15,8 +15,9 @@ header {
   align-items: center;
   padding: 20px 30px;
   top: 0;
-  position: relative;
+  /* position: relative; */
   background-color: var(--color2);
+  
 }
 
 .logo {
@@ -177,7 +178,7 @@ header {
     display: block;
     padding: 8px;
     color: var(--color3);
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .lista-menu a:hover {
@@ -190,4 +191,8 @@ header {
   .icon-cross {
     display: none;
   }
+
+  .btn {
+    padding: 10px 10px;
+}
 }
