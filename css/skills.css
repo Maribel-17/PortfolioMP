@@ -2,13 +2,29 @@
 
  .section-skills {
   text-align: center;
-  padding: 30px 0px;
+  padding-bottom: 30px;
+}
+
+.titulo-skills-wrapper {
+  overflow: hidden;  
+  white-space: nowrap;
+  display: flex;
 }
 
 .titulo-skills {
-  content: url("/img/TituloSkillsMobile.svg");
-  margin-bottom: 20px;
-  max-width: 100%;
+  content: url("../img/skills-titulo-2.svg");
+  display: inline-block;
+  width: auto; 
+  animation: moverTitulo 15s linear infinite;
+}
+
+@keyframes moverTitulo {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .skills-container {
