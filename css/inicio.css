@@ -1,6 +1,6 @@
 /*Seccion inicio*/
 
-.section-inicio {
+.div-inicio {  
   background-image: url("../img/PapelTexturaFondo.svg");
   position: relative;
   background-size: cover;
@@ -8,9 +8,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px;
+  padding: 30px;
   text-align: center;
-  scroll-margin-top: 80px;
+  padding-top: 100px;
 }
 
 .imagen-section-inicio {
@@ -69,7 +69,7 @@
 
 @media screen and (min-width: 1024px) {
 
-  .section-inicio {
+  .div-inicio {
     position: relative;
     background-size: cover;
     background-position: center;
