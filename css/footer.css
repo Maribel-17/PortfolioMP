@@ -116,14 +116,66 @@ footer p {
 
 
 @media (min-width: 1024px) {
+
   .grid-footer {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  footer h3 {
+    font-size: 1.8rem;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1.1rem;
+    padding: 0px 50px ;
+    margin-bottom: 30px;
   }
 
-  .derechos {
-    text-align: center;
-    grid-column: span 3;
+  .footer-contacto {
+    margin-bottom: 10px;
   }
+   
+  .footer-contacto .contacto {
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .contacto-a {
+    font-size: 1.2rem;
+  }
+  
+
+  .derechos p {
+    color: var(--color2);
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .derechos a {
+    font-size: 1.1rem;
+  }
+  
+  .derechos a:hover {
+    text-decoration: underline;
+  }
+ 
+  
+  .icon-whatsapp,
+  .icon-envelope,
+  .icon-instagram,
+  .icon-linkedin {
+    font-size: 1.8rem;
+  }
+  
+
+
+
+
+
 
 }
