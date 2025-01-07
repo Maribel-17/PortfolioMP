@@ -58,7 +58,7 @@
 }
 
 .skills-container h2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color:var(--color3);
   margin: 10px 0;
@@ -67,11 +67,6 @@
 
 @media screen and (min-width: 768px) {
   
-.skills-container {
-    grid-template-columns: repeat(3, 1fr); 
-    max-width: 600px;
-    margin: 0 auto;
-}
 }
 
 
@@ -82,12 +77,8 @@
   padding-bottom: 40px;
 }
 
-.titulo-skills {
-  content: url("/img/TituloSkillsDesktop.svg");
-}
-
 .skills-container {
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(3,1fr);
   max-width: 1200px;
 }
 
