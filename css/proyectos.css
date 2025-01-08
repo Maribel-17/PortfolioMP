@@ -45,19 +45,22 @@
   gap: 20px;
 }
 
-.img-proyectos img {
-  max-width: 100%;
+.video-proyectos {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
+  display: block;
 }
 
-/* Imágenes de los proyectos */
-.img-proyectos img,
-.section-proyectos-content img {
-  width: 100%;
+.video-proyectos video {
+  width: 300px;
+  height: 200px;
   border-radius: 10px;
-  }
+  object-fit: cover;
+  overflow: hidden; 
+  display: block;
+}
 
-/* Información de los proyectos */
 .content-info {
   margin-bottom: 30px;
 }
@@ -120,6 +123,22 @@
 
 
 @media (min-width: 1024px) {
+
+  .video-proyectos {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .video-proyectos video {
+    width: 500px;
+    height: 320px;
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden; 
+    display: block;
+  }
 
 .section-proyectos h1 {
   font-size: 2.5rem;
