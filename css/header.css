@@ -102,11 +102,7 @@
     height: 100px;
   }
 
-  .header {
-    padding: 1.5rem 2.8rem;
-  }
-
-  .logo {
+.logo {
     content: url("/img/ICO\ MP.png");
     width: 150px;
   }
@@ -127,10 +123,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  /* header {
-    background-color: red;
-    height: 168px;
-  } */
+ 
 
   .header {
     max-width: 1200px;
@@ -173,7 +166,7 @@
     display: block;
     padding: 8px;
     color: var(--color3);
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .lista-menu a:hover {

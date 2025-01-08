@@ -1,6 +1,4 @@
-/*Seccion inicio*/
-
-.div-inicio {  
+/* .div-inicio {  
   background-image: url("../img/PapelTexturaFondo.svg");
   position: relative;
   background-size: cover;
@@ -8,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 30px;
+  padding: 0px 20px;
   text-align: center;
   padding-top: 100px;
 }
@@ -17,7 +15,7 @@
   width: 100%;
   max-width: 250px;
   margin-bottom: 20px;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 .section-inicio-title {
@@ -69,16 +67,202 @@
 
 @media screen and (min-width: 1024px) {
 
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.div-inicio {
+  max-width: 1200px; 
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; 
+}
+
+.div-inicio {
+  padding-top: 0; 
+
+.section-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+  .imagen-section-inicio {
+    background-color: aqua;
+    max-width: 600px;
+  }
+
+  .section-inicio-title {
+    font-size: 2.5rem;
+  }
+
+  .main-section-inicio-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .main-section-inicio-content h2::before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    background-image: url("../img/ico_chek.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .main-section-inicio-content{
+    background-color: yellow;
+    text-align: start;
+    padding-left: 30px;
+  }
+
+  .section-inicio-description {
+    width: 600px;
+    text-align: start;
+    font-size: 1.2rem;
+   }
+
+  .buttons {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    margin: 20px 0px;
+    align-items: center;
+  }
+
+  .buttons img {
+    width: 48px;
+    height: 48px;
+  }
+
+   }
+  } */
+
+
+  /* ======== ESTILOS GENERALES ======== */
+.section-inicio {
+  background-image: url("../img/PapelTexturaFondo.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.div-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  padding: 20px;
+}
+
+.imagen-section-inicio {
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+
+.section-inicio-title {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: var(--color3);
+}
+
+.section-inicio-title span {
+  font-weight: 700;
+  color: var(--color1);
+}
+
+.main-section-inicio-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.main-section-inicio-content h2 span {
+  color: var(--color1); 
+}
+
+.section-inicio-description {
+  font-size: 1rem;
+  color: var(--color4);
+  margin: 32px 0px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0px;
+}
+
+.buttons img {
+  width: 32px;
+  height: 32px;
+}
+
+/* ======== ESTILOS TABLET (768px) ======== */
+@media screen and (min-width: 768px) {
   .div-inicio {
-    position: relative;
-    background-size: cover;
-    background-position: center;
+    padding-top: 50px;
+  }
+
+  .imagen-section-inicio {
+    max-width: 400px;
+  }
+
+  .section-inicio-title {
+    font-size: 2rem;
+  }
+
+  .main-section-inicio-content h2 {
+    font-size: 2rem;
+  }
+
+  .section-inicio-description {
+    font-size: 1.1rem;
+    max-width: 600px;
+  }
+}
+
+/* ======== ESTILOS DESKTOP (1024px) ======== */
+@media screen and (min-width: 1024px) {
+  .section-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .div-inicio {
+    max-width: 1200px;
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    max-width: 1200px;
-    justify-content: space-between;
+    gap: 40px;
+    padding-top: 0;
   }
 
   .imagen-section-inicio {
@@ -104,7 +288,7 @@
     background-repeat: no-repeat;
   }
 
-  .main-section-inicio-content{
+  .main-section-inicio-content {
     text-align: start;
     padding-left: 30px;
   }
@@ -113,20 +297,17 @@
     width: 600px;
     text-align: start;
     font-size: 1.2rem;
-   }
+  }
 
   .buttons {
-    display: flex;
     justify-content: start;
     gap: 30px;
-    margin: 20px 0px;
-    align-items: center;
   }
 
   .buttons img {
     width: 48px;
     height: 48px;
   }
+}
 
-   }
 
