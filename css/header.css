@@ -126,9 +126,10 @@
  
 
   .header {
-    max-width: 1200px;
+    max-width: 100vw;
     gap: 20px;
     margin: auto;
+    
   }
 
   .logo {
