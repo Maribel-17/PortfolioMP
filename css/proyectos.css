@@ -21,20 +21,21 @@
   margin: 40px 0px;
 }
 
-.content-buttons button {
+.content-buttons a {
   min-width: 230px;
   background-color: var(--color6);
   border: none;
   border-radius: 8px;
   color: var(--color2);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   padding: 10px;
   cursor: pointer;
+  text-align: center;
   transition: background-color 0.3s ease;
 }
 
-.content-buttons button:hover {
+.content-buttons a:hover {
   background-color: var(--color9);
 }
 
@@ -150,11 +151,11 @@
   gap: 20px;
 }
 
-.content-buttons button {
+.content-buttons a {
   font-size: 1.2rem;
 }
 
-.content-buttons button:hover {
+.content-buttons a:hover {
   background-color: var(--color9);
 }
 
