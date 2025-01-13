@@ -26,6 +26,7 @@ footer h3 {
 footer p {
   font-size: 0.9rem;
   margin-bottom: 40px;
+  line-height: 1.5rem;
 }
 
 .footer-contacto {
@@ -93,25 +94,38 @@ footer p {
 
 @media (min-width: 768px) {
 
-  .grid-footer {
-    grid-template-columns: repeat(2, 1fr);
-    text-align: left;
-  }
-
-  .footer-contacto .contacto {
-    display: flex;
-    justify-content: flex-start;
-    text-align: left; 
-  }
+footer h3 {
+  font-size: 1.8rem;
+}
   
-  .footer-contacto .contacto a {
-    text-align: left;
-  }
+footer p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
 
-  .footer-menu,
-  .redes {
-    padding-left: 50px;
-  }
+.derechos {
+ font-size: 1.1rem;
+}
+
+.derechos p {
+  font-size: 1.1rem;
+}
+
+.derechos a {
+  font-size: 1.1rem;
+}
+
+.contacto-a {
+  font-size: 1.1rem;
+}
+
+.icon-whatsapp,
+.icon-envelope,
+.icon-instagram,
+.icon-linkedin {
+  font-size: 1.8rem;
+}
+
 }
 
 

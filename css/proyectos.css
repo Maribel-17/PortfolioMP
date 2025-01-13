@@ -95,27 +95,32 @@
 /* Ajustes responsivos */
 
 @media (min-width: 768px) {
-  /* 
-  .section-proyectos-content {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
 
-  .proyecto {
-    flex-direction: row;
-    text-align: left;
-    max-width: 800px;
-  }
+.section-proyectos h1 {
+  font-size: 1.8rem;
+}
+  
+.content-buttons {
+  flex-direction: row;
+  gap: 10px;
+}
 
-  .proyecto:nth-child(odd) {
-    flex-direction: row-reverse;
-  }
+.content-buttons a {
+    font-size: 1.2rem;
+}
 
-  .content-info {
-    max-width: none;
-    padding: 0 20px;
-  } */
+.content-info h3 {
+  font-size: 1.3rem;
+}
+
+.content-info p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.content-info button {
+  font-size: 0.9rem;
+}
 }
 
 @media (min-width: 1024px) {
