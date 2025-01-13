@@ -70,18 +70,8 @@
 @media screen and (min-width: 768px) {
 
 .contenedor-skills-1, .contenedor-skills-2  {
-    
-footer h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-footer p {
-  font-size: 0.9rem;
-  margin-bottom: 40px;
-  line-height: 1.5rem;
-}
+  grid-template-columns: repeat(3,1fr);
+  max-width: 1200px;
 }
 
 .skill {
@@ -104,8 +94,12 @@ footer p {
  padding-bottom: 40px;
 }
 
-.skills-container h2 {
-  font-size: 1.3rem;
- }
+.skill span {
+  font-size: 1.1rem;
 
+  .skills-container h2 {
+    font-size: 1.3rem;
+   }
+
+}
 }
