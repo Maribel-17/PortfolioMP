@@ -1,5 +1,4 @@
-/*Header*/
-/* header {
+header {
   width: 100vw;
   background-color: var(--color2);
   height: 76.5px;
@@ -8,21 +7,22 @@
   top: 0;
   transform: translate(-50%, 0%);
   left: 50%;
-  background-color: yellow;
-} */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-/* .header {
+.header {
   width: 100%;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding: 15px 30px;
   top: 0;
-  position: relative;
+  position: fixed;
   background-color: var(--color2);
-  background-color: red;
-} */
+  z-index: 9999;
+}
 
 .wrapper-header  {
   width: 100%;
@@ -39,6 +39,7 @@
   z-index: 9999;
  }
 
+
 .logo {
   content: url("../img/ICO-MP.svg");
   width: 80px;
@@ -51,6 +52,7 @@
   font-size: 1.5rem;
   color: var(--color3);
 }
+
 
 .menu {
   opacity: 0;
@@ -81,13 +83,16 @@
   gap: 3rem;
 }
 
-.lista-menu li a {
+.lista-menu li {
   font-size: 1.2rem;
   line-height: 2.5rem;
   font-weight: 600;
   position: relative;
   display: flex;
   justify-content: flex-end;
+}
+
+.lista-menu li a {
   color: var(--color3);
 }
 
@@ -115,12 +120,20 @@
 
 @media screen and (min-width: 768px) {
 
+  header {
+    height: 100px;
+  }
+
+  .header {
+    padding: 1.5rem 2.8rem;
+  }
+
   .wrapper-header  {
     height: 100px;
   }
 
   .logo {
-    width: 100px;
+    width: 120px;
   }
 
   .icon-menu,
@@ -144,35 +157,34 @@
   .btn {
     font-size: 1.2rem;
   }
+
 }
 
 @media screen and (min-width: 1024px) {
-  
-.header {
+  header {
+    /* height: 168px; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
     max-width: 1200px;
     gap: 20px;
     margin: auto;
   }
 
-.wrapper-header  {
-    height: 120px;
-    max-width: 100vw;
-    margin: auto;
-    display: flex;
- }
-  
+  .wrapper-header  {
+    height: 100px;
+    box-shadow: none;
+    padding: 15px 20px;
+  }
 
-.logo {
+  .logo {
     content: url("../img/LogoConNombre.svg");
-    width: 180px;
+    width: 200px;
   }
 
-  .icon-menu,
-  .icon-cross {
-    display: none;
-  }
-
-.menu {
+  .menu {
     opacity: 1;
     visibility: visible;
     display: flex;
@@ -198,11 +210,11 @@
     display: inline-block;
   }
 
-  .lista-menu li a {
+  .lista-menu a {
     display: block;
     padding: 8px;
     color: var(--color3);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .lista-menu a:hover {
@@ -214,14 +226,6 @@
   .icon-menu,
   .icon-cross {
     display: none;
-  }
-
-  .btn {
-    font-size: 1.3rem;
-  }
-
-  .btn img {
-    width: 24px;
   }
 }
 
