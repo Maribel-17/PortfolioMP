@@ -23,15 +23,15 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 0px 20px;
   padding-top: 100px;
-  padding: 20px;
 }
 
 .imagen-section-inicio {
   width: 100%;
   max-width: 250px;
   margin-bottom: 20px;
-  padding-top: 100px;
+  padding-top: 30px;
 }
 
 .section-inicio-title {
@@ -76,9 +76,6 @@
 
 
 @media screen and (min-width: 768px) {
-  .div-inicio {
-    padding-top: 50px;
-  }
 
   .imagen-section-inicio {
     max-width: 400px;

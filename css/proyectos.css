@@ -50,12 +50,13 @@
 }
 
 .video-proyectos video {
-  width: 300px;
-  height: 200px;
+  width: 320px;
+  height: 230px;
   border-radius: 10px;
   object-fit: cover;
   overflow: hidden;
   display: block;
+  
 }
 
 .content-info {
@@ -92,12 +93,16 @@
   background-color: var(--color5);
 }
 
-/* Ajustes responsivos */
 
 @media (min-width: 768px) {
 
 .section-proyectos h1 {
   font-size: 1.8rem;
+}
+
+.video-proyectos video {
+  width: 720px;
+  height: 340px;
 }
   
 .content-buttons {

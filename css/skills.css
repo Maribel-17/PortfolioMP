@@ -96,10 +96,11 @@
 
 .skill span {
   font-size: 1.1rem;
-
-  .skills-container h2 {
-    font-size: 1.3rem;
-   }
-
 }
+
+.skills-container h2 {
+  font-size: 1.3rem;
+}
+
+
 }
