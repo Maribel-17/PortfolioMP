@@ -69,12 +69,13 @@ h4 {
 @media screen and (min-width: 1024px) {
   
   .info, .container-formacion {
-    margin-bottom: 60px;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     height: 350px;
+    max-width: 1200px;
+    margin: auto;
   }
   
   .section-sobre-mi h1 {
