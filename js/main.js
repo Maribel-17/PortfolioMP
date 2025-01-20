@@ -31,3 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', ajustarPadding);
 });
 
+
+const video = document.querySelector('video');
+const loader = document.querySelector('.loader');
+
+video.addEventListener('canplay', () => {
+    loader.style.display = 'none';
+    video.classList.remove('hidden');
+});
+ç
+
