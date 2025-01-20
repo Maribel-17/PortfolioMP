@@ -5,15 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="CIMA, consultora en inclusión laboral de personas con discapacidad. Servicios para empresas y candidatos."
+      content="Maribel Plaza, Diseñadora Gráfica, UI Designer y Desarrolladora Frontend."
     />
     <title>Maribel Plaza</title>
     <link rel="shortcut icon" href="./img/ICO MP.png" />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-      as="style"
-    />
     <link rel="stylesheet" href="./css/styleIco.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./css/header.css"/>
@@ -26,7 +21,7 @@
 
   <body>
     <header>
-      <div class="wrapper header">
+      <div class="wrapper-header">
         <img class="logo" src="./img/ICO MP.png" alt="logo MP DISEÑO"/>
         <span id="abrir" class="icon-menu"></span>
         <nav id="menu" class="menu">
@@ -38,10 +33,9 @@
             <li><a href="#sobreMi">Sobre Mi</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
-          <button class="download-button">
-          Download CV
-          <img src="./img/icon-download.svg" alt="Download Icon" class="iconDownload" />
-        </button>
+          <a href="https://drive.google.com/file/d/1pYfeF1c_l4jysw2kDIikntKD0DEXaKXU/view?usp=sharing" target="_blank" class="btn">
+            Download CV <img src="./img/icon-download.svg" alt="Descargar CV">
+        </a>
         </nav>
       </div>
     </header>
@@ -49,66 +43,82 @@
     <main>
       <section id="inicio" class="section-inicio">
         <div class="wrapper">
+        <div class="div-inicio">
+          <div>
+            <img class="imagen-section-inicio" src="./img/imagenMujerConPc.svg" alt="imagenMujerConPc">
+          </div>
           <div class="main-section-inicio-content">
-            <h1 class="section-inicio-title">Hola, soy Maribel</h1>
+            <h1 class="section-inicio-title">Hola, soy <span>Maribel</span></h1>
             <div>
-              <h2>Desarrolladora Front End</h2>
+              <h2>Desarrolladora <span>Front End</span></h2>
             </div>
             <div>
-              <h2>UI Designer</h2>
+              <h2> <span>UI</span> Designer</h2>
             </div>
             <div>
-              <h2>Diseñadora Gráfica</h2>
+              <h2>Diseñadora <span>Gráfica</span></h2>
             </div>
             <p class="section-inicio-description">
               Me especializo en crear experiencias digitales atractivas y funcionales, uniendo diseño y tecnología en
               proyectos de diseño web.</p>
             <div class="buttons">
-              <a href="#">FIGMA<img src="" alt=""></a>
-              <a href="#">GITHUB<img src="" alt=""></a>
-              <a href="#">BEHANCE<img src="" alt=""></a>
-              <a href="#">MAIL<img src="" alt=""></a>
-            </div>
-          </div>
-          <div>
-            <img src="./img/imagenMujerConPc.svg" alt="imagenMujerConPc">
-          </div>
-        </div>
-        </div>
-      </section>
+              <a href="https://www.linkedin.com/in/maribelplaza/" target="_blank" rel="noopener noreferrer">
+                <img src="./img/icon-Linkedin.svg" alt="Linkedin">
+            </a>
+              <a href="https://github.com/Maribel-17?tab=repositories" target="_blank" rel="noopener noreferrer">
+                <img src="./img/logoGithub.svg" alt="GitHub">
+              </a>
 
-      <section class="section-skills">
-        <div>
+              <a href="https://www.behance.net/mpestudio" target="_blank" rel="noopener noreferrer">
+                <img src="./img/logoBehance.svg" alt="Behance">
+            </a>
+       
+            <!-- <a href="mailto:mpestudiodisenio@gmail.com" target="_blank" rel="noopener noreferrer">
+              <img src="./img/logoMail.svg" alt="Email">
+          </a> -->
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+      <section id="skills" class="section-skills">
+        <div class="titulo-skills-wrapper">
+          <img class="titulo-skills" alt="titulo Skills">
           <img class="titulo-skills" alt="titulo Skills">
         </div>
   
         <div class="skills-container">
-          <div class="skill">
-            <img src="./img/logo-html5-negro.svg" alt="HTML logo">
-            <span>HTML</span>
+          <div class="contenedor-skills-1">
+            <div class="skill">
+              <img src="./img/logo-html5-negro.svg" alt="HTML logo">
+              <span>HTML</span>
+            </div>
+            <div class="skill">
+              <img src="./img/logo-css3-negro.svg" alt="CSS logo">
+              <span>CSS</span>
+            </div>
+    
+            <div class="skill">
+              <img src="./img/logo-javascript-negro.svg" alt="JavaScript logo">
+              <span>JavaScript</span>
+            </div>
+    
+            <div class="skill">
+              <img src="./img/logo-figma.negro.svg" alt="Figma logo">
+              <span>Figma</span>
+            </div>
+    
+            <div class="skill">
+              <img src="./img/logo-git-negro.svg" alt="Git logo">
+              <span>Git</span>
+            </div>
           </div>
-          <div class="skill">
-            <img src="./img/logo-css3-negro.svg" alt="CSS logo">
-            <span>CSS</span>
-          </div>
-  
-          <div class="skill">
-            <img src="./img/logo-javascript-negro.svg" alt="JavaScript logo">
-            <span>JavaScript</span>
-          </div>
-  
-          <div class="skill">
-            <img src="./img/logo-figma.negro.svg" alt="Figma logo">
-            <span>Figma</span>
-          </div>
-  
-          <div class="skill">
-            <img src="./img/logo-git-negro.svg" alt="Git logo">
-            <span>Git</span>
-          </div>
-  
-          <div class="aprendiendo">
-            <h2>Aprendiendo</h2>
+          
+          <h2>Aprendiendo:</h2>
+
+          <div class="contenedor-skills-2">
             <div class="skill">
               <img src="./img/logo-react-negro.svg" alt="React logo">
               <span>React</span>
@@ -124,28 +134,58 @@
               <span>Tailwind</span>
             </div>
           </div>
-        </div>
+          
+          </div>
       </section>
 
-      <section class="section-proyectos">
+      <section id="proyectos" class="section-proyectos">
         <h1>Proyectos</h1>
-        <button>Desarrollo Front End</button>
-        <button>Diseño Gráfico</button>
-        <button>UI Design</button>
+        <div class="content-buttons">
+          <a href="#video-proyectos">Desarrollo Front End</a>
+          <a href="https://www.behance.net/mpestudio" target="_blank">Diseño Gráfico</a>
+          <a href="https://www.behance.net/mpestudio" target="_blank">UI Design</a>
+        </div>
         <div class="section-proyectos-content">
-          <h1>Landing Page - Agencia de Diseño</h1>
-          <p>Página web desarrollada como práctica de diseño y funcionalidad. Usando una plantilla de Figma.</p>
-          <button>#HTML</button>
-          <button>#CSS</button>
-          <button>#JavaScript</button>
-          <button>#Figma</button>
-          <div class="imagen-section">
-            <img src="./img/simulacion-1.svg" alt="simulacion-1">
+          
+          <div class="proyecto">
+            <div id="video-proyectos" class="video-proyectos">
+              <div class="loader"></div>
+              <video class="hidden" controls><source src="./media/VideoLandingAgencia.mp4" poster="../PortfolioMP/img/portadaLandingAgencia.JPG" type="video/mp4"></video>
+            </div>  
+            <div class="content-info">
+              <a href="https://maribel-17.github.io/LandingAgencia/" target="_blank">Landing Page - Agencia de Diseño</a>
+              <p>Página web desarrollada como práctica de diseño y funcionalidad. Usando una plantilla de Figma.</p>
+              <div class="tags">
+                <button>#HTML</button>
+                <button>#CSS</button>
+                <button>#JavaScript</button>
+                <button>#Figma</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="proyecto">
+            <div id="video-proyectos" class="video-proyectos">
+              <div class="loader"></div>
+              <video class="hidden" controls><source src="./media/VideoCimaConsultora.mp4" poster="./img/portadaLandingCima.JPG" type="video/mp4"></video>
+            </div>
+            <div class="content-info">
+              <a href="https://cimaconsultora.com.ar/" target="_blank">Landing Page - Consultora RRHH Inclusiva</a>
+              <p>Página web desarrollada para cliente de una Consultora Inclusiva de RRHH. Armé diseño responsivo en Figma.</p>
+              <div class="tags">
+                <button>#HTML</button>
+                <button>#CSS</button>
+                <button>#JavaScript</button>
+                <button>#Figma</button>
+              </div>
+            </div>
           </div>
         </div>
-        
-    <section class="section-sobre-mi">
-      <div>
+      </section>
+      
+
+    <section id="sobreMi" class="section-sobre-mi">
+      <div class="info">
         <h1>Sobre MI</h1>
         <p>Hola, soy Maribel, Diseñadora Gráfica, UI Designer y Desarrolladora Frontend. Con experiencia en diseño
           visual y en la creación de interfaces atractivas, me especializo en el desarrollo de sitios web responsivos y
@@ -154,74 +194,90 @@
         </p>
       </div>
 
-      <div class="section-formacion">
-        <h1>Formación</h1>
-        <div class="formacion-1">
+      <div class="container-formacion">
+       <h1>Formación</h1>
+       <div class="container-formaciones">
+        <div class="formacion">
           <div>
             <img src="./img/icono-egresado.svg" alt="egresado">
           </div>
-          <div>
-            <p>Técnico Superior en Diseño Gráfico y Publicitario - Instituto Manuel Belgrano</p>
+          <div class="texto-formacion">
+            <h4>Técnico Superior en Diseño Gráfico y Publicitario - Instituto Manuel Belgrano</h4>
             <p>2003-2008</p>
           </div>
         </div>
 
-        <div class="formacion-2">
+        <div class="formacion">
           <div>
             <img src="./img/icono-egresado.svg" alt="egresado">
           </div>
-          <div>
-            <p>Diseño UI - Educación IT</p>
+          <div class="texto-formacion">
+            <h4>Diseño UI - Educación IT</p>
             <p>Mayo 2022 - Julio 2022</p>
           </div>
         </div>
 
-        <div class="formacion-3">
+        <div class="formacion">
           <div>
             <img src="./img/icono-egresado.svg" alt="egresado">
           </div>
-          <div>
-            <p>Maquetador Web - Educación IT</p>
+          <div class="texto-formacion">
+            <h4>Maquetador Web - Educación IT</p>
             <p>Marzo 2024 - Mayo 2024</p>
           </div>
         </div>
+
+       </div>
+        
       </div>
     </section>
 
     </main>
 
     <footer>
-      <div id="contacto" class="footer-container">
-  
-        <div class="footer-contacto">
-          <h3>CONTACTO</h3>
-          <div class="contacto">
-            <span class="icon-whatsapp"></span>
-            <a class="contacto-a" href="">+54 9 261 651 4720</a>
+      <div id="contacto"class="footer-container">
+        <div class="grid-footer">
+          
+          <div class="footer-contacto">
+            <h3>CONTACTO</h3>
+            <div class="contacto">
+              <span class="icon-whatsapp"></span>
+              <a class="contacto-a" href="https://wa.link/a6mx0n" target="_blank">+54 9 261 651 4720</a>
+            </div>
+
+            <div class="contacto">
+              <span class="icon-envelope"></span>
+              <a
+                class="contacto-a"
+                href="mailto:mpestudiodisenio@gmail.com"
+                target="_blank"
+                >mpestudiodisenio@gmail.com</a
+              >
+            </div>
           </div>
-  
-          <div class="contacto">
-            <span class="icon-envelope"></span>
-            <a class="contacto-a" href="mailto:info@cimaconsultora.com.ar" target="_blank">mpestudiodisenio@gmail.com</a>
+
+          <div class="redes">
+            <h3>REDES SOCIALES</h3>
+            <a
+              href="https://www.instagram.com/mpestudiodisenio/"
+              target="_blank"
+              ><span class="icon-instagram"></span
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/maribelplaza/"
+              target="_blank"
+              ><span class="icon-linkedin"></span
+            ></a>
           </div>
         </div>
-  
-        <div class="redes">
-          <h3>MIS REDES</h3>
-          <a href="https://www.instagram.com/cima_consultora/profilecard/?igsh=MTZucTVxMWZ6Y21teQ%3D%3D"
-            target="_blank"><span class="icon-instagram"></span></a>
-          <a href="https://www.linkedin.com/company/cimaconsultora/about/" target="_blank"><span
-              class="icon-linkedin"></span></a>
+
+        <div class="derechos">
+          <p>@Todos los derechos reservados.</p>
+          <a href="https://wa.me/5492616514720" target="_blank">Creada por MP Diseño</a>
         </div>
-      </div>
-  
-      <div class="derechos">
-        <p>@Todos los derechos reservados. Imagenes Freepik / Pexels</p>
-        <a href="https://wa.me/5492616514720" target="_blank">Creada por MP Diseño</a>
-      </div>
       </div>
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
   </body>
 </html>

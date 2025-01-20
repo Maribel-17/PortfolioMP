@@ -1,7 +1,6 @@
-/*Header*/
 header {
   width: 100vw;
-  background-color: white;
+  background-color: var(--color2);
   height: 76.5px;
   position: fixed;
   z-index: 50;
@@ -13,34 +12,47 @@ header {
 
 .header {
   width: 100%;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding: 15px 30px;
   top: 0;
-  position: relative;
-  background-color: white;
+  position: fixed;
+  background-color: var(--color2);
+  z-index: 9999;
 }
 
+.wrapper-header  {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin: auto;
+  top: 0;
+  background-color: var(--color2);
+  position: fixed;
+  z-index: 9999;
+ }
+
+
 .logo {
-  content: url("/img/ICO\ MP.png");
+  content: url("../img/ICO-MP.svg");
   width: 80px;
   z-index: 10000;
   position: relative;
 }
 
-.icon-menu {
+.icon-menu, .icon-cross {
   display: block;
   font-size: 1.5rem;
   color: var(--color3);
 }
 
-.icon-cross {
-  display: block;
-  font-size: 1.3rem;
-  color: var(--color3);
-}
 
 .menu {
   opacity: 0;
@@ -72,7 +84,7 @@ header {
 }
 
 .lista-menu li {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 2.5rem;
   font-weight: 600;
   position: relative;
@@ -84,7 +96,30 @@ header {
   color: var(--color3);
 }
 
+.btn {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: var(--color1);
+  color: var(--color2);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.btn img {
+  width: 16px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.btn:hover {
+  background-color: var(--color8);
+}
+
 @media screen and (min-width: 768px) {
+
   header {
     height: 100px;
   }
@@ -93,14 +128,17 @@ header {
     padding: 1.5rem 2.8rem;
   }
 
+  .wrapper-header  {
+    height: 100px;
+  }
+
   .logo {
-    content: url("/img/ICO\ MP.png");
-    width: 150px;
+    width: 120px;
   }
 
   .icon-menu,
   .icon-cross {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .menu {
@@ -111,11 +149,22 @@ header {
     z-index: 9999;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   }
+
+  .lista-menu li a {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
   header {
-    height: 168px;
+    /* height: 168px; */
+    display: flex;
+    justify-content: center;
   }
 
   .header {
@@ -124,8 +173,14 @@ header {
     margin: auto;
   }
 
+  .wrapper-header  {
+    height: 100px;
+    box-shadow: none;
+    padding: 15px 20px;
+  }
+
   .logo {
-    content: url("/img/LogoConNombre.svg");
+    content: url("../img/LogoConNombre.svg");
     width: 200px;
   }
 
@@ -157,9 +212,9 @@ header {
 
   .lista-menu a {
     display: block;
-    padding: 8px;
+    padding: 0px 8px;
     color: var(--color3);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .lista-menu a:hover {
@@ -173,3 +228,5 @@ header {
     display: none;
   }
 }
+
+

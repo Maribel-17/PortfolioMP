@@ -18,3 +18,26 @@ menuItems.forEach(item => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('header');
+  const sectionInicio = document.querySelector('.section-inicio');
+
+  const ajustarPadding = () => {
+    const alturaHeader = header.offsetHeight;
+    sectionInicio.style.paddingTop = `${alturaHeader}px`;
+  };
+
+  ajustarPadding();
+  window.addEventListener('resize', ajustarPadding);
+});
+
+
+const video = document.querySelector('video');
+const loader = document.querySelector('.loader');
+
+video.addEventListener('canplay', () => {
+    loader.style.display = 'none';
+    video.classList.remove('hidden');
+});
+ç
+

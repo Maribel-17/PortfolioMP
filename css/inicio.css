@@ -1,119 +1,164 @@
-/*Seccion inicio*/
 
 .section-inicio {
-  position: relative;
-  background-image: url(../img/fondo\ 3.png);
+  background-image: url("../img/PapelTexturaFondo.svg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 30px;
-  scroll-margin-top: 80px;
+  overflow: hidden;
 }
 
-.section-inicio-title,
-.section-inicio-description {
-  color: var(--color2);
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.div-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px 20px;
+  /* padding-top: 100px; */
+}
+
+.imagen-section-inicio {
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 20px;
+  padding-top: 30px;
 }
 
 .section-inicio-title {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: var(--color3);
+}
+
+.section-inicio-title span {
   font-weight: 700;
-  line-height: 3rem;
-  margin-bottom: 2rem;
+  color: var(--color1);
+}
+
+.main-section-inicio-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.main-section-inicio-content h2 span {
+  color: var(--color1); 
 }
 
 .section-inicio-description {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  color: var(--color4);
+  margin: 32px 0px;
   text-align: center;
-  font-weight: 400;
-  line-height: 1.5rem;
-  margin: auto;
-  margin-bottom: 2rem;
-  max-width: 500px;
 }
 
 .buttons {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0px;
 }
 
-.btn-personal,
-.btn-empleo {
-  background-color: var(--color2);
-  color: var(--color1);
-  border: 1px solid var(--color5);
+.buttons img {
+  width: 32px;
+  height: 32px;
 }
 
-.btn-personal:hover,
-.btn-empleo:hover {
-  background-color: var(--color1);
-  color: var(--color2);
-  border: 1px solid var(--color5);
-}
-
-.main-section-inicio-content {
-  text-align: center;
-  max-width: 700px;
-  margin: auto;
-}
 
 @media screen and (min-width: 768px) {
+
+  .imagen-section-inicio {
+    max-width: 400px;
+  }
+
+  .section-inicio-title {
+    font-size: 2rem;
+  }
+
+  .main-section-inicio-content h2 {
+    font-size: 2rem;
+  }
+
+  .section-inicio-description {
+    font-size: 1.1rem;
+    max-width: 600px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  
   .section-inicio {
-    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .div-inicio {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 0;
+  }
+
+  .imagen-section-inicio {
+    max-width: 600px;
   }
 
   .section-inicio-title {
     font-size: 2.5rem;
-    line-height: 2.8rem;
   }
 
-  .section-inicio-description {
-    font-size: 1rem;
-    line-height: 1.8rem;
+  .main-section-inicio-content h2 {
+    font-size: 2.5rem;
   }
 
-  .buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .section-inicio {
-    height: 100vh;
-    justify-content: left;
+  .main-section-inicio-content h2::before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    background-image: url("../img/ico_chek.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
-  .section-inicio-title {
-    font-size: 3.3rem;
-    line-height: 3.5rem;
-    margin-bottom: 3rem;
+  .main-section-inicio-content {
     text-align: start;
+    padding-left: 30px;
   }
 
   .section-inicio-description {
+    width: 600px;
+    text-align: start;
     font-size: 1.2rem;
-    line-height: 2rem;
-    margin-bottom: 3rem;
-    text-align: left;
-    margin-left: 0;
   }
 
   .buttons {
     justify-content: start;
+    gap: 30px;
   }
 
-  .main-section-inicio-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 30px;
-    margin: 0%;
+  .buttons img {
+    width: 48px;
+    height: 48px;
   }
 }
+
+

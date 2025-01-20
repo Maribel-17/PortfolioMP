@@ -1,0 +1,108 @@
+.section-sobre-mi {
+  background-image: url("../img/PapelTexturaFondo.svg");
+  text-align: center;
+  padding: 20px;
+  color: var(--color4);
+  gap: 48px;
+}
+
+.info {
+  margin-bottom: 60px;
+}
+
+.section-sobre-mi h1 {
+  font-size: 1.5rem;
+  margin: 35px 0px;
+  color: var(--color3);
+  font-weight: 700;
+}
+
+.section-sobre-mi p {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.5rem
+}
+
+.container-formacion {
+  margin: 40px 0px;
+}
+
+.formacion {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px ;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.texto-formacion p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+
+  .section-sobre-mi h1 {
+    font-size: 1.8rem;
+  }
+
+  .section-sobre-mi p {
+    font-size: 1.1rem;
+    line-height: 1.8rem
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+.texto-formacion p {
+  font-size: 0.9rem;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .info, .container-formacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .section-sobre-mi h1 {
+    font-size: 2.5rem;
+  }
+  
+  .section-sobre-mi p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    max-width: 600px;
+  }
+
+  .container-formacion {
+    height: 400px;
+  }
+
+  .container-formaciones {
+    max-width: 600px;
+  }
+
+   
+  h4 {
+    font-size: 1.3rem;
+}
+  
+  .texto-formacion p {
+    font-size: 1.1rem;
+  }
+
+}
