@@ -1,26 +1,25 @@
 const menu = document.querySelector("#menu");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
-const menuItems = document.querySelectorAll("#menu .lista-menu a"); 
+const menuItems = document.querySelectorAll("#menu .lista-menu a");
 
 abrir.addEventListener("click", () => {
-  menu.classList.add("visible"); 
+  menu.classList.add("visible");
 });
 
-cerrar.addEventListener("click", () => { 
-  menu.classList.remove("visible"); 
+cerrar.addEventListener("click", () => {
+  menu.classList.remove("visible");
 });
 
-
-menuItems.forEach(item => {
+menuItems.forEach((item) => {
   item.addEventListener("click", () => {
-    menu.classList.remove("visible"); 
+    menu.classList.remove("visible");
   });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const header = document.querySelector('header');
-  const sectionInicio = document.querySelector('.section-inicio');
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector("header");
+  const sectionInicio = document.querySelector(".section-inicio");
 
   const ajustarPadding = () => {
     const alturaHeader = header.offsetHeight;
@@ -28,16 +27,5 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   ajustarPadding();
-  window.addEventListener('resize', ajustarPadding);
+  window.addEventListener("resize", ajustarPadding);
 });
-
-
-const video = document.querySelector('video');
-const loader = document.querySelector('.loader');
-
-video.addEventListener('canplay', () => {
-    loader.style.display = 'none';
-    video.classList.remove('hidden');
-});
-ç
-
