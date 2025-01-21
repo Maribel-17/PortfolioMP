@@ -12,7 +12,7 @@ Bienvenido a mi portfolio digital, donde presento mis trabajos como Diseñadora 
 🔗 [Visitar el sitio web](https://maribel-17.github.io/PortfolioMP/)  
 
 ## 📸 Vista Previa  
-Portfolio Web de Maribel (https://github.com/Maribel-17/PortfolioMP/blob/main/portadaPortfolioMaribel.JPG) 
+Portfolio Web de Maribel (https://github.com/Maribel-17/PortfolioMP/blob/main/img/portadaPortfolioMaribel.JPG)
 
 # 🛠 Tecnologías Utilizadas  
 - **HTML5**
