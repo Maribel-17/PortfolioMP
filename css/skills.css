@@ -1,20 +1,21 @@
 /* Sección de Skills */
 
- .section-skills {
+.section-skills {
   text-align: center;
+  padding: 2rem 0 4rem;
 }
 
 .titulo-skills-wrapper {
-  overflow: hidden;  
+  overflow: hidden;
   white-space: nowrap;
   display: flex;
-  
+  padding-bottom: 1rem;
 }
 
 .titulo-skills {
   content: url("../img/skills-titulo-2.svg");
   display: inline-block;
-  width: auto; 
+  width: auto;
   animation: moverTitulo 15s linear infinite;
 }
 
@@ -27,11 +28,16 @@
   }
 }
 
-.contenedor-skills-1, .contenedor-skills-2 {
-  display: grid;
-  gap: 15px;
+.contenedor-skills-1,
+.contenedor-skills-2 {
+  display: flex;
+  gap: 2rem 3rem;
   padding: 20px 0px;
   margin-bottom: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 750px;
+  margin: auto;
 }
 
 .skill {
@@ -42,7 +48,6 @@
   border-radius: 8px;
   padding: 10px 0px;
   min-width: 200px;
-  margin: 0 auto;
   gap: 15px;
 }
 
@@ -54,54 +59,48 @@
 .skill span {
   font-size: 1rem;
   font-weight: 700;
-  color:var(--color3);
+  color: var(--color3);
 }
 
 .skills-container h2 {
   font-size: 1.1rem;
   font-weight: 700;
-  color:var(--color3);
-  margin: 10px 0;
+  color: var(--color3);
+  margin: 3rem 0;
   background-color: var(--color10);
-  padding: 10px;
- }
-
+  padding: 1rem;
+}
 
 @media screen and (min-width: 768px) {
+  .contenedor-skills-1,
+  .contenedor-skills-2 {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+  }
 
-.contenedor-skills-1, .contenedor-skills-2  {
-  grid-template-columns: repeat(3,1fr);
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.skill {
+  .skill {
     max-width: none;
-}
+  }
 
-.skill span {
-  font-size: 1.1rem;
-}
+  .skill span {
+    font-size: 1.1rem;
+  }
 
-.skills-container h2 {
-  font-size: 1.2rem;
- }
-  
+  .skills-container h2 {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .section-skills {
+    padding-bottom: 40px;
+  }
 
-.section-skills {
- padding-bottom: 40px;
-}
+  .skill span {
+    font-size: 1.1rem;
+  }
 
-.skill span {
-  font-size: 1.1rem;
-}
-
-.skills-container h2 {
-  font-size: 1.3rem;
-}
-
-
+  .skills-container h2 {
+    font-size: 1.3rem;
+  }
 }

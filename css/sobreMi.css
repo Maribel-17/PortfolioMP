@@ -1,7 +1,7 @@
 .section-sobre-mi {
   background-image: url("../img/PapelTexturaFondo.svg");
   text-align: center;
-  padding: 20px;
+  padding: 4.5rem 1.5rem 4rem;
   color: var(--color4);
   gap: 48px;
   background-size: cover;
@@ -13,7 +13,7 @@
 
 .section-sobre-mi h1 {
   font-size: 1.5rem;
-  margin: 35px 0px;
+  margin: 2rem 0px 4rem;
   color: var(--color3);
   font-weight: 700;
 }
@@ -21,7 +21,7 @@
 .section-sobre-mi p {
   font-size: 1rem;
   text-align: justify;
-  line-height: 1.5rem
+  line-height: 1.5rem;
 }
 
 .container-formacion {
@@ -30,10 +30,10 @@
 
 .formacion {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   align-items: center;
   gap: 25px;
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -48,28 +48,27 @@ h4 {
 }
 
 @media screen and (min-width: 768px) {
-
   .section-sobre-mi h1 {
     font-size: 1.8rem;
   }
 
   .section-sobre-mi p {
     font-size: 1.1rem;
-    line-height: 1.8rem
-}
+    line-height: 1.8rem;
+  }
 
-h4 {
-  font-size: 1.2rem;
-}
+  h4 {
+    font-size: 1.2rem;
+  }
 
-.texto-formacion p {
-  font-size: 0.9rem;
-}
+  .texto-formacion p {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  
-  .info, .container-formacion {
+  .info,
+  .container-formacion {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -78,11 +77,11 @@ h4 {
     max-width: 1200px;
     margin: auto;
   }
-  
+
   .section-sobre-mi h1 {
     font-size: 2.5rem;
   }
-  
+
   .section-sobre-mi p {
     font-size: 1.1rem;
     line-height: 1.8rem;
@@ -97,13 +96,11 @@ h4 {
     max-width: 600px;
   }
 
-   
   h4 {
     font-size: 1.3rem;
-}
-  
+  }
+
   .texto-formacion p {
     font-size: 1.1rem;
   }
-
 }
