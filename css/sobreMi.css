@@ -13,35 +13,29 @@
 }
 
 .section-sobre-mi h1 {
-  font-size: 1.5rem;
+  font-size: var(--font-lg);
   margin: 2rem 0px 4rem;
   color: var(--color3);
   font-weight: 700;
 }
 
 .section-sobre-mi p {
-  font-size: 1rem;
+  font-size: var(--font-sm);
   text-align: justify;
   line-height: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
-  .section-sobre-mi h1 {
-    font-size: 1.8rem;
+
+  .section-sobre-mi .info h1 {
+    font-size: var(--font-xl);
   }
 
-  .section-sobre-mi p {
-    font-size: 1.1rem;
+  .section-sobre-mi .info p {
+    font-size: var(--font-md);
     line-height: 1.8rem;
   }
 
-  h4 {
-    font-size: 1.2rem;
-  }
-
-  .texto-formacion p {
-    font-size: 0.9rem;
-  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -56,29 +50,12 @@
     margin: auto;
   }
 
-  .section-sobre-mi h1 {
-    font-size: 2.5rem;
+  .section-sobre-mi .info h1 {
+    font-size: var(--font-xxl);
   }
 
-  .section-sobre-mi p {
-    font-size: 1.1rem;
+  .section-sobre-mi .info p {
     line-height: 1.8rem;
     max-width: 600px;
-  }
-
-  .container-formacion {
-    height: 400px;
-  }
-
-  .container-formaciones {
-    max-width: 600px;
-  }
-
-  h4 {
-    font-size: 1.3rem;
-  }
-
-  .texto-formacion p {
-    font-size: 1.1rem;
   }
 }

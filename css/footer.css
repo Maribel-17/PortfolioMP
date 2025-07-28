@@ -18,13 +18,13 @@ footer {
 }
 
 footer h3 {
-  font-size: 1.2rem;
+  font-size: var(--font-lg);
     margin: 20px 0px;
     text-align: center;
 }
 
 footer p {
-  font-size: 0.9rem;
+  font-size: var(--font-xs);
   margin-bottom: 40px;
   line-height: 1.5rem;
 }
@@ -55,14 +55,14 @@ footer p {
 
 .derechos p {
   color: var(--color2);
-  font-size: 0.9rem;
+  font-size: var(--font-xs);
   text-align: center;
 }
 
 .derechos a {
   color: var(--color2);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: var(--font-xs);
 }
 
 .derechos a:hover {
@@ -87,7 +87,7 @@ footer p {
 .icon-instagram,
 .icon-linkedin {
   color: var(--color2);
-  font-size: 1.5rem;
+    font-size: var(--font-lg);
   margin-right: 10px;
 }
 
@@ -95,28 +95,28 @@ footer p {
 @media (min-width: 768px) {
 
 footer h3 {
-  font-size: 1.8rem;
+  font-size: var(--font-lg);
 }
   
 footer p {
-  font-size: 1.1rem;
+  font-size: var(--font-md);
   line-height: 1.8rem;
 }
 
 .derechos {
- font-size: 1.1rem;
+ font-size: var(--font-md);
 }
 
 .derechos p {
-  font-size: 1.1rem;
+font-size: var(--font-md);
 }
 
 .derechos a {
-  font-size: 1.1rem;
+  font-size: var(--font-md);
 }
 
 .contacto-a {
-  font-size: 1.1rem;
+  font-size: var(--font-md);
 }
 
 .icon-whatsapp,
@@ -149,12 +149,10 @@ footer p {
   }
 
   footer h3 {
-    font-size: 1.8rem;
     margin: 20px 0;
   }
 
   footer p {
-    font-size: 1.1rem;
     padding: 0 50px;
     margin-bottom: 30px;
   }
@@ -168,14 +166,9 @@ footer p {
     padding: 10px 0;
   }
 
-  .contacto-a {
-    font-size: 1.2rem;
-  }
-  
-
   .derechos p {
     color: var(--color2);
-    font-size: 1.1rem;
+    font-size: var(--font-md);
     text-align: center;
   }
   

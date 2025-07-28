@@ -25,7 +25,7 @@
   align-items: center;
   text-align: center;
   padding: 0px 20px;
-  /* padding-top: 100px; */
+  margin-bottom: 3rem;
 }
 
 .imagen-section-inicio {
@@ -36,7 +36,7 @@
 }
 
 .section-inicio-title {
-  font-size: 1.5rem;
+  font-size: var(--font-lg);
   font-weight: normal;
   color: var(--color3);
 }
@@ -47,7 +47,7 @@
 }
 
 .main-section-inicio-content h2 {
-  font-size: 1.5rem;
+  font-size: var(--font-lg);
   font-weight: 700;
   margin: 5px 0;
 }
@@ -57,9 +57,9 @@
 }
 
 .section-inicio-description {
-  font-size: 1rem;
+  font-size: var(--font-sm);
   color: var(--color4);
-  margin: 32px 0px;
+  margin: 2rem 0rem;
   text-align: center;
 }
 
@@ -83,16 +83,21 @@
   }
 
   .section-inicio-title {
-    font-size: 2rem;
+    font-size: var(--font-xl);
   }
 
   .main-section-inicio-content h2 {
-    font-size: 2rem;
+    font-size: var(--font-xl);
   }
 
   .section-inicio-description {
-    font-size: 1.1rem;
+    font-size: var(--font-md);
     max-width: 600px;
+  }
+
+    .buttons img {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -122,11 +127,11 @@
   }
 
   .section-inicio-title {
-    font-size: 2.5rem;
+    font-size: var(--font-xxl);
   }
 
   .main-section-inicio-content h2 {
-    font-size: 2.5rem;
+    font-size: var(--font-xxl);
   }
 
   .main-section-inicio-content h2::before {
@@ -148,12 +153,13 @@
   .section-inicio-description {
     width: 600px;
     text-align: start;
-    font-size: 1.2rem;
+    font-size: var(--font-lg);
   }
 
   .buttons {
     justify-content: start;
     gap: 30px;
+    margin-top: 3rem;
   }
 
   .buttons img {
