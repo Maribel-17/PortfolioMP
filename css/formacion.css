@@ -1,5 +1,4 @@
-.section-sobre-mi {
-  background-color: var(--color11);
+.section-formacion {
   text-align: center;
   padding: 4.5rem 1.5rem 4rem;
   color: var(--color4);
@@ -7,21 +6,28 @@
   background-size: cover;
 }
 
-.info {
-  margin-bottom: 60px;
+.container-formacion {
+  margin: 40px 0px;
 }
 
-.section-sobre-mi h1 {
-  font-size: 1.5rem;
-  margin: 2rem 0px 4rem;
-  color: var(--color3);
-  font-weight: 700;
+.formacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.section-sobre-mi p {
+h4 {
   font-size: 1rem;
-  text-align: justify;
-  line-height: 1.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.texto-formacion p {
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
@@ -55,11 +61,11 @@
     margin: auto;
   }
 
-  .section-sobre-mi h1 {
+  .section-formacion h1 {
     font-size: 2.5rem;
   }
 
-  .section-sobre-mi p {
+  .section-formacion p {
     font-size: 1.1rem;
     line-height: 1.8rem;
     max-width: 600px;
