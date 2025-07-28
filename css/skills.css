@@ -3,6 +3,7 @@
 .section-skills {
   text-align: center;
   padding: 2rem 0 4rem;
+  scroll-margin-top: 100px;
 }
 
 .titulo-skills-wrapper {

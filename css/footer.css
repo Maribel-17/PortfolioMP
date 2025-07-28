@@ -1,26 +1,26 @@
+/* Estilos generales */
 
 footer {
-  background-color: var(--color1);
+  background-color: var(--color13);
   color: var(--color2);
   padding: 3rem 30px; 
+  scroll-margin-top: 100px;
 }
 
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .grid-footer {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
   text-align: center;
 }
 
 footer h3 {
   font-size: 1.2rem;
-  margin-bottom: 10px;
-  text-align: center;
+    margin: 20px 0px;
+    text-align: center;
 }
 
 footer p {
@@ -37,7 +37,7 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .footer-contacto .contacto span {
@@ -132,21 +132,30 @@ footer p {
 @media (min-width: 1024px) {
 
   .grid-footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
   }
-  
+
+  .footer-contacto,
+  .redes {
+    flex: 1;
+  }
+
+  .redes {
+    border-left: 1px solid var(--color2);
+    padding-left: 2rem;
+  }
+
   footer h3 {
     font-size: 1.8rem;
-    margin: 20px;
-    text-align: center;
+    margin: 20px 0;
   }
-  
+
   footer p {
     font-size: 1.1rem;
-    padding: 0px 50px ;
+    padding: 0 50px;
     margin-bottom: 30px;
   }
 
@@ -187,9 +196,6 @@ footer p {
   }
   
 
-
-
-
-
-
 }
+
+

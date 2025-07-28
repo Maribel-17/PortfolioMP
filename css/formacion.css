@@ -1,9 +1,10 @@
 .section-formacion {
   text-align: center;
-  padding: 4.5rem 1.5rem 4rem;
+  padding: 4.5rem 3rem 4rem;
   color: var(--color4);
   gap: 48px;
   background-size: cover;
+  scroll-margin-top: 100px;
 }
 
 .container-formacion {
