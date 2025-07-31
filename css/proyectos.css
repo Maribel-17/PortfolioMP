@@ -11,6 +11,12 @@
   padding-bottom: 2rem;
 }
 
+.section-proyectos h4  {
+  color: var(--color2);
+  text-align: left;
+  font-size: var(--font-sm);
+}
+
 /* Subtítulo por categoría */
 .subtitulo-proyectos {
   color: var(--color2);
@@ -51,6 +57,12 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.video-proyectos:hover {
+  filter: grayscale(0%);
 }
 
 .video-proyectos video {
@@ -60,6 +72,25 @@
   display: block;
   border: none;
 }
+
+.proyecto-thumbnail {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.proyecto-thumbnail img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.proyecto-thumbnail img:hover {
+  filter: grayscale(0%);
+}
+
 
 /* Info dentro de la tarjeta */
 .content-info {
@@ -72,6 +103,7 @@
   color: var(--color2);
   font-weight: 600;
   display: block;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .content-info a:hover {
@@ -79,7 +111,7 @@
 }
 
 .content-info p {
-  font-size: var(--font-sm);
+  font-size: var(--font-xs);
   line-height: 1.5;
   margin: 20px 0;
   color: var(--color2);
@@ -182,7 +214,7 @@ font-size: var(--font-xs);
   }
 
   .content-info p {
-        font-size: var(--font-sm);
-    line-height: 1.8;
+    font-size: var(--font-sm);
+    line-height: 1.6;
   }
 }
