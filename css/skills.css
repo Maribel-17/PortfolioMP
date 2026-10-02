@@ -105,3 +105,30 @@
     font-size: 1.3rem;
   }
 }
+
+
+.skills-heading {
+  max-width: 750px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.specialties {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .75rem;
+}
+
+.specialties span {
+  border: 2px solid var(--color5);
+  border-radius: 999px;
+  padding: .65rem 1rem;
+  font-size: var(--font-sm);
+  font-weight: 700;
+  color: var(--color3);
+  background: var(--color2);
+}
