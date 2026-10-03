@@ -20,7 +20,8 @@
   text-align: left;
 }
 
-.container-formacion h1 {
+.container-formacion h1,
+.container-formacion h2 {
   font-size: var(--font-lg);
   margin: 2rem 0px 4rem;
   color: var(--color3);
@@ -40,7 +41,8 @@ h4 {
 
 @media screen and (min-width: 768px) {
   
-  .container-formacion h1 {
+  .container-formacion h1,
+.container-formacion h2 {
     font-size: var(--font-xl);
   }
 
@@ -65,7 +67,8 @@ h4 {
     margin: auto;
   }
 
-  .section-formacion h1 {
+  .section-formacion h1,
+.section-formacion h2 {
     font-size: var(--font-xxl);
   }
 

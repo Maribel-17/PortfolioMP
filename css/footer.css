@@ -1,194 +1,258 @@
-/* Estilos generales */
+/* ========================================
+   FOOTER
+   MOBILE FIRST
+======================================== */
 
 footer {
+  width: 100%;
+  box-sizing: border-box;
+
   background-color: var(--color13);
   color: var(--color2);
-  padding: 3rem 30px; 
+
+  padding: 3rem 1.25rem;
+
   scroll-margin-top: 100px;
 }
 
 .footer-container {
+  width: 100%;
   max-width: 1200px;
+
   margin: 0 auto;
-  padding: 0 2rem;
 }
 
+
+/* ========================================
+   ESTRUCTURA
+======================================== */
+
 .grid-footer {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2.5rem;
+
   text-align: center;
 }
 
+
+/* ========================================
+   TÍTULOS
+======================================== */
+
 footer h3 {
-  font-size: var(--font-lg);
-    margin: 20px 0px;
-    text-align: center;
+  margin: 0 0 1.5rem;
+
+  color: var(--color2);
+
+  font-size: var(--font-md);
+  font-weight: 700;
+
+  text-align: center;
 }
 
-footer p {
-  font-size: var(--font-xs);
-  margin-bottom: 40px;
-  line-height: 1.5rem;
-}
+
+/* ========================================
+   CONTACTO
+======================================== */
 
 .footer-contacto {
-  margin-bottom: 20px;
+  width: 100%;
 }
 
 .footer-contacto .contacto {
   display: flex;
+
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
-}
 
-.footer-contacto .contacto span {
-  margin-right: 10px;
-}
+  gap: 10px;
 
-
-.derechos {
-  text-align: center;
-  border-top: 1px solid var(--color7); 
-  padding-top: 1rem; 
-  margin-top: 2rem; 
-  font-size: 0.8rem;
-}
-
-.derechos p {
-  color: var(--color2);
-  font-size: var(--font-xs);
-  text-align: center;
-}
-
-.derechos a {
-  color: var(--color2);
-  text-decoration: none;
-  font-size: var(--font-xs);
-}
-
-.derechos a:hover {
-  text-decoration: underline;
-}
-
-.footer-menu ul li a, 
-.footer-contacto a, 
-.redes a {
-  color: var(--color2);
-  text-decoration: none;
-}
-
-.footer-menu ul li a:hover, 
-.footer-contacto a:hover, 
-.redes a:hover {
-  text-decoration: underline;
-}
-
-.icon-whatsapp,
-.icon-envelope,
-.icon-instagram,
-.icon-linkedin {
-  color: var(--color2);
-    font-size: var(--font-lg);
-  margin-right: 10px;
-}
-
-
-@media (min-width: 768px) {
-
-footer h3 {
-  font-size: var(--font-lg);
-}
-  
-footer p {
-  font-size: var(--font-md);
-  line-height: 1.8rem;
-}
-
-.derechos {
- font-size: var(--font-md);
-}
-
-.derechos p {
-font-size: var(--font-md);
-}
-
-.derechos a {
-  font-size: var(--font-md);
+  margin: 1rem 0;
 }
 
 .contacto-a {
-  font-size: var(--font-md);
+  color: var(--color2);
+
+  font-size: var(--font-sm);
+
+  text-decoration: none;
+
+  word-break: break-word;
+}
+
+.contacto-a:hover {
+  text-decoration: underline;
 }
 
 .icon-whatsapp,
-.icon-envelope,
-.icon-instagram,
-.icon-linkedin {
-  font-size: 1.8rem;
+.icon-envelope {
+  color: var(--color2);
+
+  font-size: 1.5rem;
 }
 
+
+/* ========================================
+   PERFILES PROFESIONALES
+======================================== */
+
+.redes {
+  width: 100%;
+}
+
+.redes-links {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.5rem;
+}
+
+.redes-links a {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+}
+
+.redes-links img {
+  width: 34px;
+  height: 34px;
+
+  object-fit: contain;
+
+  /* Convierte los SVG negros en blancos */
+  filter: brightness(0) invert(1);
+
+  transition: transform 0.2s ease;
+}
+
+.redes-links a:hover img {
+  transform: translateY(-2px);
 }
 
 
-@media (min-width: 1024px) {
+/* ========================================
+   COPYRIGHT
+======================================== */
+
+.derechos {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+
+  border-top: 1px solid var(--color7);
+
+  text-align: center;
+}
+
+.derechos p {
+  margin: 0;
+
+  color: var(--color2);
+
+  font-size: var(--font-xs);
+  line-height: 1.5;
+}
+
+
+/* ========================================
+   TABLET
+   768px
+======================================== */
+
+@media screen and (min-width: 768px) {
+
+  footer {
+    padding: 3.5rem 2rem;
+  }
+
+  footer h3 {
+    font-size: var(--font-lg);
+  }
+
+  .contacto-a {
+    font-size: var(--font-md);
+  }
+
+  .icon-whatsapp,
+  .icon-envelope {
+    font-size: 1.8rem;
+  }
+
+  .redes-links {
+    gap: 1.75rem;
+  }
+
+  .redes-links img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .derechos p {
+    font-size: var(--font-sm);
+  }
+}
+
+
+/* ========================================
+   DESKTOP
+   1024px
+======================================== */
+
+@media screen and (min-width: 1024px) {
+
+  footer {
+    padding: 4rem 2rem 2rem;
+  }
 
   .grid-footer {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+
     align-items: stretch;
-    gap: 2rem;
+    justify-content: center;
+
+    gap: 0;
   }
 
   .footer-contacto,
   .redes {
     flex: 1;
-  }
 
-  .redes {
-    border-left: 1px solid var(--color2);
-    padding-left: 2rem;
-  }
+    display: flex;
+    flex-direction: column;
 
-  footer h3 {
-    margin: 20px 0;
-  }
-
-  footer p {
-    padding: 0 50px;
-    margin-bottom: 30px;
+    justify-content: center;
   }
 
   .footer-contacto {
-    margin-bottom: 10px;
-  }
-   
-  .footer-contacto .contacto {
-    justify-content: center;
-    padding: 10px 0;
+    padding-right: 2rem;
   }
 
-  .derechos p {
-    color: var(--color2);
-    font-size: var(--font-md);
-    text-align: center;
-  }
-  
-  .derechos a {
-    font-size: 1.1rem;
-  }
-  
-  .derechos a:hover {
-    text-decoration: underline;
-  }
- 
-  
-  .icon-whatsapp,
-  .icon-envelope,
-  .icon-instagram,
-  .icon-linkedin {
-    font-size: 1.8rem;
-  }
-  
+  .redes {
+    padding-left: 2rem;
 
+    border-left: 1px solid var(--color7);
+  }
+
+  footer h3 {
+    font-size: var(--font-lg);
+  }
+
+  .redes-links {
+    gap: 2rem;
+  }
+
+  .redes-links img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .derechos {
+    margin-top: 3rem;
+  }
 }
-
-
