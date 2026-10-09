@@ -12,7 +12,8 @@
   margin-bottom: 60px;
 }
 
-.section-sobre-mi h1 {
+.section-sobre-mi h1,
+.section-sobre-mi h2 {
   font-size: var(--font-lg);
   margin: 2rem 0px 4rem;
   color: var(--color3);
@@ -27,7 +28,8 @@
 
 @media screen and (min-width: 768px) {
 
-  .section-sobre-mi .info h1 {
+  .section-sobre-mi .info h1,
+  .section-sobre-mi .info h2 {
     font-size: var(--font-xl);
   }
 
@@ -50,7 +52,8 @@
     margin: auto;
   }
 
-  .section-sobre-mi .info h1 {
+  .section-sobre-mi .info h1,
+  .section-sobre-mi .info h2 {
     font-size: var(--font-xxl);
   }
 
